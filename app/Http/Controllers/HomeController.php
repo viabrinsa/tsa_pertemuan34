@@ -29,5 +29,21 @@ class HomeController extends Controller
         $user = Auth::user();
         return view('home',['user' => $user]);
     }
+
+    public function login()
+    {
+        return view('login_lte');
+    }
+    
+
+    public function index_admin()
+    {
+        return 'Halaman Index Admin';
+    }
+
+    public function index_user()
+    {
+        return 'Halaman Index User';
+    }
     
 }
